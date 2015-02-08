@@ -1,14 +1,10 @@
 import java.io.IOException;
-import java.util.Map;
-
 import org.apache.http.HttpException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class test extends httpClient{
-Map<Integer, String> testMap;
-	
 	@BeforeClass
 	public void setup() throws HttpException, IOException{
 	httpClient.sendRequest();
